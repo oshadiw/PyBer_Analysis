@@ -17,16 +17,20 @@ This table shows that the total rides, drivers and fares were much higher in Urb
   ```
   pyber_fares_df["Date"]=pd.to_datetime(pyber_fares_df["Date"])
   ```
-  The data within the year 2019 was selected using the .loc method, and a new data frame was created and used to create a FiveThirtyEight style line chart. 
+  The data within the year 2019 was selected using the .loc method, and a new data frame was created and used to generate a FiveThirtyEight style line chart. 
 ![Line Chart](https://github.com/oshadiw/PyBer_Analysis/blob/master/analysis/ChallengeFig.png)
 
 This figure shows various trends between the three city types. For example, all three city types had a peak in total fare towards the end of February. The Urban fares seemed to gradually increase thorughout the year, with some drops but never down to the starting value. Rural cities had low fares thorughout the year (compared to the other city types), never going above $500. 
 
 ## Challenges Encountered and Overcome
 
-* Programming
-
 * Data analysis
+   - One challenge encountered during the analysis was coming up with descriptive names for the multiple data frames created with the same info (Date, City Type, Fare) but changing the formatting and order of the columns. In order to overcome this, I tried to keep the names as descriptive as possible, using names that noted what terms were being highlighted in the new data frame. 
+
+* Programming
+   - Another challenge that I faced was the summary data frame not splitting the values by city type. 
+
+
 
 * Graphing, etc
 
