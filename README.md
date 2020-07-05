@@ -9,6 +9,7 @@
    total_fares_by_type = pyber_data_df.groupby(["type"]).sum()["fare"]
    ```
    The average fare per ride/driver was then caluclated by dividing the total fares per city type by the total rides or drivers, respectively. This data was then combined into a new summary data frame. 
+![Summary DF]analysis/Summary DF.png   
   
   In order to find the total fares for each week by city type, a new data frame was created using only the Date, City Type and Fare metrics. The Date column wsa converted to datatime format using the following code:
   ```
