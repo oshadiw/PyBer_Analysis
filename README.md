@@ -9,7 +9,8 @@
    total_fares_by_type = pyber_data_df.groupby(["type"]).sum()["fare"]
    ```
    The average fare per ride/driver was then caluclated by dividing the total fares per city type by the total rides or drivers, respectively. This data was then combined into a new summary data frame. 
-![Summary DF]analysis/Summary DF.png   
+![Summary DF]https://github.com/oshadiw/PyBer_Analysis/blob/master/analysis/Summary%20DF.png 
+This table shows that the total rides, drivers and fares were much higher in Urban cities compated to Suburban and Rural cities. Rural cities, however, had higher average fares per ride and driver compared to the other two city types. 
   
   In order to find the total fares for each week by city type, a new data frame was created using only the Date, City Type and Fare metrics. The Date column wsa converted to datatime format using the following code:
   ```
